@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-const App = () => {
+const List = () => {
 	const fruits = [
         {name:'사과', price:200000},
         {name:'오렌지', price:3000},
@@ -16,4 +16,4 @@ const App = () => {
 	)
 }
 
-export default App
+export default List
