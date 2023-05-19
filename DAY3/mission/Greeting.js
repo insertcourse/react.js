@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Greeting = () => {
-    const [message, setMessage] = React.useState("안녕하세요!")
-    const [color, setColor] = React.useState("red")
+    const [message, setMessage] = useState("안녕하세요!")
+    const [color, setColor] = useState("red")
 
     const changeMessage1 = () => {
         setMessage("안녕히가세요!")
@@ -11,18 +11,6 @@ const Greeting = () => {
         setMessage("안녕하세요!")
     }
 
-    const changeColor1 = () => {
-        setColor("red")
-    }
-    const changeColor2 = () => {
-        setColor("green")
-    }
-    const changeColor3 = () => {
-        setColor("blue")
-    }
-
-
-
     return (
         <div>
             <div>
@@ -30,12 +18,12 @@ const Greeting = () => {
                 <button onClick={changeMessage1}>퇴장</button>
             </div>
             <div>
-                <h1>{message}</h1>
+                <h1 style={{color}}>{message}</h1>
             </div>
             <div>
-                <button onClick={changeColor1} style={{color:"red"}}>빨간색</button>
-                <button onClick={changeColor2} style={{color:"green"}}>초록색</button>
-                <button onClick={changeColor3} style={{color:"blue"}}>파란색</button>
+                <button style={{color:"red"}} onClick={() => setColor("red")}>빨간색</button>
+                <button style={{color:"green"}} onClick={() => setColor("green")}>초록색</button>
+                <button style={{color:"blue"}} onClick={() => setColor("blue")}>파란색</button>
             </div>
         </div>
     )
