@@ -11,12 +11,6 @@ const enter = () => {
 
 const exit = () => {
 
-const enter = () => {
-    setMessage("안녕하세요!");
-};
-
-const exit = () => {
-
     setMessage("안녕히 가세요!");
 };
 
@@ -37,6 +31,6 @@ return (
     </div>
 );
 };
-};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 
 export default Greeting;
