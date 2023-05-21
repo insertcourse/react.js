@@ -14,7 +14,7 @@ const exit = () => {
     setMessage("안녕히 가세요!");
 };
 
-const colorChange = (newColor) => {
+const colorChange = (newColor) => {//버튼 눌렀을 때 색을 변경하는 
     setColor(newColor);
 };
 
