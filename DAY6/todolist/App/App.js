@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState, useCallback } from 'react';
 
 const AddTodo = ({ onAddTodo }) => {
-    const [todoText, setTodoText] = React.useState('');
-    const inputChange = React.useCallback((e) => {
+    const [todoText, setTodoText] = useState('');
+    const inputChange = useCallback((e) => {
     setTodoText(e.target.value);
 }, []);
 
