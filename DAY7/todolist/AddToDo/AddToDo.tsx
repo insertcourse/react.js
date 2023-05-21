@@ -16,13 +16,13 @@ const addTodo = useCallback(() => {
 }, [todoText, onAddTodo]);
 
 useLayoutEffect(() => {
-    setTodoText(input)
+    setTodoText(oninput)
 }, []);
 
 return (
     <div>
         <input type="text" value={todoText} onChange={inputChange} />
-        <button class="button" onClick={addTodo}>+</button>
+        <button onClick={addTodo}>+</button>
     </div>
 );
 };
