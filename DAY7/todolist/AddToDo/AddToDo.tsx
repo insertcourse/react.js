@@ -7,7 +7,7 @@ const AddTodo = ({ onAddTodo }) => {
   }, []);
 
   const addTodo = useCallback(() => {
-    if (todoText.trim() !== "") {
+    if (todoText !== "") {
       //공백인지 아닌지 확인하기
       onAddTodo({
         text: todoText,
