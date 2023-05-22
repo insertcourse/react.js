@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 
-const Introduce = () => {
+const App = () => {
     const [input, setInput] = useState('')
     const [lists, setLists] = useState([])
     const [next, setNext] = useState(0)
@@ -48,4 +48,4 @@ const Introduce = () => {
     );
 };
 
-export default Introduce;
+export default App;
