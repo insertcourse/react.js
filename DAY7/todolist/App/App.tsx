@@ -10,7 +10,7 @@ const App = () => {
         <Router>
             <Routes>
                 <Route path='/' element={<Main />}></Route>
-                <Route path='/Todolist' element={<TodoList />}></Route>
+                <Route path='/todolist' element={<TodoList />}></Route>
             </Routes>
         </Router>
     );
