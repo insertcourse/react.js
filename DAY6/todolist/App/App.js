@@ -39,7 +39,7 @@ const App = () => {
     return (
         <div>
             <form onSubmit={plus}>
-                <input type='text' placeholder='입력하세여' value={input} onChange={onChange} ref={inputName}></input>
+                <input type='text' placeholder='입력하세여' value={input} onChange={onChange}></input>
                 <button type='plus'>확인</button>
             </form>
             <button onClick={reset}>초기화</button> 
