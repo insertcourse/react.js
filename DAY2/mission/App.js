@@ -8,7 +8,7 @@ const App = () => {
   ];
   return (
     <div>
-      {fruits.map(() => {
+      {fruits.map((fruit) => {
         return (
           <h1
             style={{
@@ -17,7 +17,7 @@ const App = () => {
               fontWeight: 700,
             }}
           >
-            {fruits.name} 가격 : {fruits.price}입니다.
+            {fruit.name}의 가격은 {fruit.price}입니다.
           </h1>
         );
       })}
