@@ -4,18 +4,18 @@ const Greeting = () => {
     const [message, setMessage] = useState("안녕하세요!")
     const [color, setColor] = useState("red")
 
-    const changeMessage1 = () => {
+    const changeGoodbye = () => {
         setMessage("안녕히가세요!")
     }
-    const changeMessage2 = () => {
+    const changeHi = () => {
         setMessage("안녕하세요!")
     }
 
     return (
         <div>
             <div>
-                <button onClick={changeMessage2}>입장</button>
-                <button onClick={changeMessage1}>퇴장</button>
+                <button onClick={changeHi}>입장</button>
+                <button onClick={changeGoodbye}>퇴장</button>
             </div>
             <div>
                 <h1 style={{color}}>{message}</h1>
