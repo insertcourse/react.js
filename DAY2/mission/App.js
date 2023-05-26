@@ -10,14 +10,8 @@ const App = () => {
     <div>
       {fruits.map((fruit) => {
         return (
-          <h1
-            style={{
-              color: "pink",
-              fontSize: "30px",
-              fontWeight: 700,
-            }}
-          >
-            {fruit.name}의 가격은 {fruit.price}입니다.
+          <h1>
+            {fruit.name} 가격 : {fruit.price}
           </h1>
         );
       })}
