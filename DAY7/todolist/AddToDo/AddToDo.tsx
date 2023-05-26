@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useLayoutEffect } from "react";
-import "./App.css";
+import "./AddToDo.scss";
 
 const AddTodo = ({ onAddTodo }) => {
   const [todoText, setTodoText] = useState("");
@@ -9,7 +9,6 @@ const AddTodo = ({ onAddTodo }) => {
 
   const addTodo = useCallback(() => {
     if (todoText !== "") {
-      //공백인지 아닌지 확인하기
       onAddTodo({
         text: todoText,
       });
@@ -18,15 +17,13 @@ const AddTodo = ({ onAddTodo }) => {
   }, [todoText, onAddTodo]);
 
   useLayoutEffect(() => {
-    setTodoText(input);
+    setTodoText(oninput);
   }, []);
 
   return (
     <div>
       <input type="text" value={todoText} onChange={inputChange} />
-      <button class="button" onClick={addTodo}>
-        +
-      </button>
+      <button onClick={addTodo}>+</button>
     </div>
   );
 };

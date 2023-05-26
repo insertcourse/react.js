@@ -1,0 +1,10 @@
+.greeting--message {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-color {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
