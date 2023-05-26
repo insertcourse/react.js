@@ -1,13 +1,13 @@
 import React from "react";
-import TodoListItem from "./TodoListItem";
-import Header from ".Header";
-import AddToDo from ".AddTodo";
+import TodoListItem from "../TodoListItem/TodoListItem";
+import Header from "../Header/Header";
+import AddToDo from "../../../DAY7/todolist/AddToDo/AddToDo";
 
 const TodoList = ({ todoes }) => {
   return (
     <div>
       <Header />
-      <AddToDo />
+      <AddToDo onAddTodo={undefined} />
       {todoes.map((todo) => (
         <TodoListItem todo={todo} />
       ))}

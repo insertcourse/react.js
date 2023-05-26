@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import TodoList from "./TodoList";
+import TodoList from "../TodoList/TodoList";
 
 const App = () => {
   return (
@@ -8,7 +8,10 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/"></Route>
-          <Route path="/todolist" element={<TodoList />}></Route>
+          <Route
+            path="/todolist"
+            element={<TodoList todoes={undefined} />}
+          ></Route>
         </Routes>
       </Router>
 

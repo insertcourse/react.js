@@ -1,7 +1,7 @@
 import React from "react";
-import TodoListItem from "./TodoListItem";
-import Header from "./Header";
-import AddToDo from "./AddToDo";
+import TodoListItem from "../TodoListItem";
+import Header from "../Header/Header";
+import AddToDo from "../AddToDo/AddToDo";
 
 const TodoList = ({ todoes }) => {
   return (
