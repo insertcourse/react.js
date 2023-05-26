@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useLayoutEffect } from "react";
-import "./App.js";
+import "./App.css";
 
 const AddTodo = ({ onAddTodo }) => {
   const [todoText, setTodoText] = useState("");
