@@ -5,11 +5,11 @@ const List = () => {
 
   return (
     <div>
-      <ol>
+      <ul>
         {items.map((item) => (
           <li>{item}</li>
         ))}
-      </ol>
+      </ul>
     </div>
   );
 };
