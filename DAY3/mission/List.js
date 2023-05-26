@@ -1,8 +1,6 @@
 import React from "react";
 
-const List = () => {
-  const items = ["포도", "바나나", "딸기", "오렌지"];
-
+const List = ({ items }) => {
   return (
     <div>
       <ul>
